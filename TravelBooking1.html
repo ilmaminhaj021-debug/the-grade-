@@ -1,0 +1,252 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title>Sri Lanka Travel Booking Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: lightgray;
+      color: black;
+      padding: 20px;
+    }
+    
+    h1{
+	font-family:Footlight MT Light;
+        font-size:36;
+    }
+    h2 {
+      color: Green;
+      font-family:Times New Roman;
+      font-size:28;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin: auto;
+      max-width: 700px;
+      border: 2px solid gray;
+    }
+    p {
+      margin-bottom: 15px;
+      font-family:  Bell MT;
+    }
+
+    p1 {
+     font-family: Baskerville Old Face;
+    
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    select option.affordable {
+      background-color: lightgreen;
+    }
+    select option.luxury {
+      background-color: lightblue;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+      background: green;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    input[type="reset"] {
+      background: red;
+    }
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+<h1><center> The Grade Next Adventure </center> </h1>
+<h2><center>Travel Booking Form — Sri Lanka</center></h2>
+
+<p1><center><b>
+  Welcome to our booking form! 🇱🇰✨<br>
+  Get ready to experience the charm, culture, and natural beauty of Sri Lanka like never before.<br>
+  Whether you’re seeking adventure, relaxation, or a touch of tradition, we’ll help you design a journey made just for you.
+</b></center></p1><br>
+
+<form>
+
+  <!-- Personal Details -->
+  <p>
+    <label>Full Name:</label>
+    <input type="text" name="fullname" placeholder="Enter your name">
+  </p>
+
+  <p>
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="you@example.com">
+  </p>
+
+  <p>
+    <label>Phone:</label>
+    <input type="text" name="phone" placeholder="+94 7XX XXX XXX">
+  </p>
+
+  <p>
+    <label>Number of People:</label>
+    <input type="number" name="people" min="1" placeholder="1" >
+  </p>
+
+  <p>
+    <label>Destination:</label>
+    <select name="destination">
+      <option value="">--Select Destination--</option>
+      <option value="ella">Ella</option>
+      <option value="yala">Yala</option>
+      <option value="kandy">Kandy (Temple of the Tooth)</option>
+      <option value="sigiriya">Sigiriya</option>
+      <option value="bentota">Bentota</option>
+      <option value="nuwara">Nuwara Eliya</option>
+    </select>
+  </p>
+
+  <p>
+    <label>Travel Dates:</label>
+    <input type="text" name="dates" placeholder="2026-01-10 to 2026-01-20">
+  </p>
+
+  <hr>
+
+  <!-- ELLA -->
+  <p><strong>Ella Hotels (1 Day Price LKR)</strong></p>
+  <p>Affordable:</p>
+  <select name="ella_affordable">
+    <option value="">--Select Hotel--</option>
+    <option class="affordable">Mountain Heavens — 19200</option>
+    <option class="affordable">The Grand Ella — 21600</option>
+    <option class="affordable">Nature View Cottages — 17500</option>
+    <option class="affordable">Ella Panorama Inn — 18200</option>
+  </select>
+  <p>Luxury:</p>
+  <select name="ella_luxury">
+    <option value="">--Select Hotel--</option>
+    <option class="luxury">98 Acres Resort & Spa — 28800</option>
+    <option class="luxury">EKHO Ella — 30000</option>
+    <option class="luxury">Mountain Heavens Boutique — 32500</option>
+  </select>
+
+  <!-- YALA -->
+  <p><strong>Yala Hotels (1 Day Price LKR)</strong></p>
+  <p>Affordable:</p>
+  <select name="yala_affordable">
+    <option value="">--Select Hotel--</option>
+    <option class="affordable">Chaarya Resort & Spa — 22800</option>
+    <option class="affordable">Safari Village Tissamaharama — 21500</option>
+  </select>
+  <p>Luxury:</p>
+  <select name="yala_luxury">
+    <option value="">--Select Hotel--</option>
+    <option class="luxury">Jetwing Yala — 36000</option>
+    <option class="luxury">Leopard Safari Lodge — 26400</option>
+    <option class="luxury">Wild Coast Tented Lodge — 34500</option>
+  </select>
+
+  <!-- KANDY -->
+  <p><strong>Kandy Hotels (Temple of the Tooth) 1 Day Price LKR</strong></p>
+  <p>Affordable:</p>
+  <select name="kandy_affordable">
+    <option value="">--Select Hotel--</option>
+    <option class="affordable">Hotel Suisse — 16800</option>
+    <option class="affordable">Queen's Hotel — 18000</option>
+    <option class="affordable">Serene View Guest House — 15500</option>
+  </select>
+  <p>Luxury:</p>
+  <select name="kandy_luxury">
+    <option value="">--Select Hotel--</option>
+    <option class="luxury">Cinnamon Citadel — 24000</option>
+    <option class="luxury">The Kandy House — 33600</option>
+    <option class="luxury">Earl's Regency Kandy — 28500</option>
+  </select>
+
+  <!-- SIGIRIYA -->
+  <p><strong>Sigiriya Hotels (1 Day Price LKR)</strong></p>
+  <p>Affordable:</p>
+  <select name="sigiriya_affordable">
+    <option value="">--Select Hotel--</option>
+    <option class="affordable">Sigiriya Village — 20400</option>
+    <option class="affordable">Hotel Paradise — 18800</option>
+  </select>
+  <p>Luxury:</p>
+  <select name="sigiriya_luxury">
+    <option value="">--Select Hotel--</option>
+    <option class="luxury">Heritance Kandalama — 31200</option>
+    <option class="luxury">Jetwing Vil Uyana — 38400</option>
+    <option class="luxury">Aliya Resort & Spa — 34000</option>
+  </select>
+
+  <!-- BENTOTA -->
+  <p><strong>Bentota Hotels (1 Day Price LKR)</strong></p>
+  <p>Affordable:</p>
+  <select name="bentota_affordable">
+    <option value="">--Select Hotel--</option>
+    <option class="affordable">Avani Bentota Resort — 26400</option>
+    <option class="affordable">Sunset Beach Hotel — 24800</option>
+  </select>
+  <p>Luxury:</p>
+  <select name="bentota_luxury">
+    <option value="">--Select Hotel--</option>
+    <option class="luxury">Cinnamon Bey — 28800</option>
+    <option class="luxury">The Fortress Resort — 36000</option>
+    <option class="luxury">AVANI Bentota — 32500</option>
+  </select>
+
+  <!-- NUWARA ELIYA -->
+  <p><strong>Nuwara Eliya Hotels (1 Day Price LKR)</strong></p>
+  <p>Affordable:</p>
+  <select name="nuwara_affordable">
+    <option value="">--Select Hotel--</option>
+    <option class="affordable">The Grand Hotel — 22800</option>
+    <option class="affordable">Jetwing St. Andrew’s — 24000</option>
+    <option class="affordable">Araliya Green Hills — 21500</option>
+  </select>
+  <p>Luxury:</p>
+  <select name="nuwara_luxury">
+    <option value="">--Select Hotel--</option>
+    <option class="luxury">Heritance Tea Factory — 28800</option>
+    <option class="luxury">Grand Mount Hotel — 32000</option>
+  </select>
+
+  <!-- Special Requests -->
+  <p>
+    <label>Special Requests:</label>
+    <textarea name="requests" rows="4" cols="50" placeholder="Any notes..."></textarea>
+  </p>
+
+  <!-- Submit & Reset Buttons -->
+  <p>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </p>
+
+</form>
+
+</body>
+</html>
